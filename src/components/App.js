@@ -25,6 +25,7 @@ class App extends Component {
     );
   }
 
+//have to create an async function to change book state and then re-run getbooks function 
   updateBook = (book,shelf) => {
     update(book,shelf).then(()=> {
       this.getBooks();

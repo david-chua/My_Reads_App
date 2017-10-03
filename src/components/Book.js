@@ -41,6 +41,9 @@ Book.defaultProps = {
   shelf: "none"
 };
 
+
+//each Book must have a specific set of object data. I added the issRequired functionality so adding a new object would at least show a book title and an Id and some shelf. I debated on doing authors but I don't think it's that important since the search functionality of the BookAPI is mainly through title.
+
 Book.propTypes = {
   info: PropTypes.shape({
     authors: PropTypes.array,
